@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Caramelldansen</title>
+		<script>
+			alert("You're in a dark room. You see a door with a faint light underneath.");
+			var input;
+			var secondInput;
+			do {
+				input = prompt("Do you wish to 'open' the door or go back to 'sleep'?");
+				if (input == "sleep") {
+					do {
+					secondInput = prompt("Do you have a pleasant 'dream' or a terrible 'nightmare'?");
+						if (secondInput == "dream") {
+							alert("You have warm dreams and a cozy sleep.");
+							console.log("You are now logged out.");
+						}
+						else if (secondInput == "nightmare") {
+							alert("you're sleep is restless as you toss and turn");
+							console.log("You are now logged out.");
+						}
+						else {
+							alert("Choose either 'dream' or 'nightmare'");
+						}
+					} while (secondInput != "dream" && secondInput != "nightmare");
+				} else if (input == "open") {
+					do {
+					secondInput = prompt("What lies before you? 'Freedom' or 'Caramelldansen'");
+						if (secondInput == "Freedom") {
+							alert("You live out the rest of your days exactly as you wish.");
+							console.log("You are now logged out.");
+						}
+						else if (secondInput == "Caramelldansen") {
+							alert("You're filled with joy for the rest of eternity.");
+							console.log("You are now logged out.");
+						}
+						else {
+							alert("Choose either 'Freedom' or 'Caramelldansen'");
+						}
+					} while (secondInput != "Freedom" && secondInput != "Caramelldansen");
+				}
+				else {
+					alert("Choose either 'open' or 'sleep'");
+				}
+			} while (input != "open" && input != "sleep");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
